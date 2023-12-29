@@ -1,9 +1,8 @@
 <h1>Heroes list</h1>
-<mat-divider></mat-divider>
-
+<mat-divider class="my-3"></mat-divider>
 
 <div *ngIf="data$ | async as heroes" class="grid mb-8">
-    <div *ngFor="let hero of heroes" class="col-12 sm:col-4 md:col-3 xl:col-2">
-        <heroes-hero-card [hero]="hero"></heroes-hero-card>
-    </div>
+  <div *ngFor="let hero of heroes" class="col-12 sm:col-4 md:col-3 xl:col-2">
+    <heroes-hero-card [hero]="hero"></heroes-hero-card>
+  </div>
 </div>

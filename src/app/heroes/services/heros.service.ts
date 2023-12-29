@@ -32,11 +32,11 @@ export class HeroesService {
     if (!hero.id) throw Error('Hero Id is required');
     return this.http.patch<Hero>(`${this.baseUrl}/heroes/${hero.id}`, hero);
   }
-  
+
   deleteHeroById(id: string): Observable<boolean> {
     return this.http.delete<Hero>(`${this.baseUrl}/heroes/${id}`).pipe(
-      catchError((err) => of(false)),
-      map((resp) => true)
+      map((resp) => true),
+      catchError((err) => of(false))
     );
   }
 }

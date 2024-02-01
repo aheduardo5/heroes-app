@@ -97,4 +97,8 @@ export class NewHeroPageComponent implements OnInit {
       duration: 2500,
     });
   }
+
+  onReturn(): void {
+    this.router.navigateByUrl('heroes/list');
+  }
 }

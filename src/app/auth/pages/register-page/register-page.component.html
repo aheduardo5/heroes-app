@@ -1,29 +1,31 @@
 <div class="flex flex-column">
-    <mat-card class="p-3">
-        <mat-card-header>
-            <span class="text-lg mb-4">
-                Register
-            </span>
-        </mat-card-header>
+  <mat-card class="p-3">
+    <mat-card-header>
+      <span class="text-lg mb-4"> Register </span>
+    </mat-card-header>
 
-        <mat-form-field>
-            <mat-label>User name</mat-label>
-            <input type="text" matInput placeholder="user name">
-        </mat-form-field>
+    <mat-form-field>
+      <mat-label>User name</mat-label>
+      <input type="text" matInput placeholder="user name" />
+    </mat-form-field>
 
-        <mat-form-field>
-            <mat-label>Password</mat-label>
-            <input type="text" matInput placeholder="password">
-        </mat-form-field>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input type="text" matInput placeholder="name" />
+    </mat-form-field>
 
-        <button mat-button mat-flat-button color="primary">
-            <mat-icon>login</mat-icon>
-            Login
-        </button>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="text" matInput placeholder="password" />
+    </mat-form-field>
 
-        <div class="flex justify-content-end mt-5">
-            <a routerLink="/auth/login">Do you have an account?</a>
-        </div>
-    </mat-card>
+    <button mat-button mat-flat-button color="primary">
+      <mat-icon>login</mat-icon>
+      Create an account
+    </button>
 
+    <div class="flex justify-content-end mt-5">
+      <a routerLink="/auth/login">Do you have an account?</a>
+    </div>
+  </mat-card>
 </div>
